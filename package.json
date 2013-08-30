@@ -1,0 +1,10 @@
+{
+  "name": "jquery_toolbar",
+  "version": "1.0.0",
+  "description" : "BY DA UED TEAM!",
+  "url" : "http://www.dongao.com",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-less": "*"
+  }
+}

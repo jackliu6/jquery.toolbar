@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>toolbar demo</title>
+	<link rel="stylesheet" href="css/demo.css">
+	<!-- [if lte IE 7]> -->
+	<link rel="stylesheet" href="css/demo_ie67.css">
+	<!-- <![endif] -->
+</head>
+<body>
+	<div class="container">
+		<h1>jquery.toolbar demo</h1>
+		<h3>
+			support ie6+ & !ie, ie6,ie7 should define special css.
+		</h3>
+		<div class="demo-box">
+			<div class="demo-box-title">Buttons</div>
+			<div class="demo-box-content">
+				<button class="test">toggle →</button>
+				<button class='act-clicktotop'>click to top</button>
+				<ul class="toolbar-demo demo-clicktotop">
+					<li><a href=""><span class="glyphicon glyphicon-user"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-list-alt"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-print"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-save"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-trash"></span></a></li>
+				</ul>
+				<button class='act-clicktobottom'>click to bottom</button>
+				<ul class="toolbar-demo demo-clicktobottom">
+					<li><a href=""><span class="glyphicon glyphicon-user"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-list-alt"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-print"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-save"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-trash"></span></a></li>
+				</ul>
+				<button class='act-clicktoleft'>click to left</button>
+				<ul class="toolbar-demo demo-clicktoleft">
+					<li><a href=""><span class="glyphicon glyphicon-user"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-list-alt"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-print"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-save"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-trash"></span></a></li>
+				</ul>
+				<button class='act-clicktoright'>click to right</button>
+				<ul class="toolbar-demo demo-clicktoright">
+					<li><a href=""><span class="glyphicon glyphicon-user"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-list-alt"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-print"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-save"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-trash"></span></a></li>
+				</ul>
+				<button class='act-hovertotop'>hover to top</button>
+				<ul class="toolbar-demo demo-hovertotop">
+					<li><a href=""><span class="glyphicon glyphicon-user"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-list-alt"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-print"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-save"></span></a></li>
+					<li><a href=""><span class="glyphicon glyphicon-trash"></span></a></li>
+				</ul>
+				<div class="demo-code">
+<pre>
+example : 
+
+$(".act-clicktoright").toolbar({
+	align : 'right',
+	content : '.demo-clicktoright'
+});
+</pre>					
+				</div>
+			</div>
+		</div>
+		<div class="demo-box">
+			<div class="demo-box-title">Glyhps</div>
+			<div class="demo-box-content">
+				<h5>horizontal align top</h5>
+				<ul class="toolbar-demo glyph-wrap demo-glyph-horizontal">
+					<li>
+						<a href=""><span class="glyphicon glyphicon-user"></span></a>
+						<div class="toolbar profile">
+							<input type="text" placeholder='your name?'>
+						</div>
+					</li>
+					<li>
+						<a href=""><span class="glyphicon glyphicon-list-alt"></span></a>
+						<div class="toolbar list">
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+						</div>
+					</li>
+					<li>
+						<a href=""><span class="glyphicon glyphicon-print"></span></a>
+						<div class="toolbar print">
+							<input type="checkbox"> confirm? <button type="button">print</button>
+						</div>
+					</li>
+					<li>
+						<a href=""><span class="glyphicon glyphicon-save"></span></a>
+						<div class="toolbar form">
+							<form action="">
+								<h3>please input your information!</h3>
+								<ul>
+									<li><label>name:</label><span><input type="text"></span></li>
+									<li><label>phone:</label><span><input type="text"></span></li>
+									<li><label>email:</label><span><input type="text"></span></li>
+									<li><label></label><span><button type="submit">submit</button></span></li>
+								</ul>
+							</form>
+						</div>
+					</li>
+					<li>
+						<a href=""><span class="glyphicon glyphicon-trash"></span></a>
+						<div class="toolbar confirm">
+							<button>confirm</button> <button>cancel</button>
+						</div>
+					</li>
+				</ul>				
+			</div>
+			<div class="demo-box-content">
+				<h5>horizontal align bottom</h5>
+				<ul class="toolbar-demo glyph-wrap demo-glyph-horizontal-bottom">
+					<li>
+						<a href=""><span class="glyphicon glyphicon-user"></span></a>
+						<div class="toolbar profile">
+							<input type="text" placeholder='your name?'>
+						</div>
+					</li>
+					<li>
+						<a href=""><span class="glyphicon glyphicon-list-alt"></span></a>
+						<div class="toolbar list">
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+						</div>
+					</li>
+					<li>
+						<a href=""><span class="glyphicon glyphicon-print"></span></a>
+						<div class="toolbar print">
+							<input type="checkbox"> confirm? <button type="button">print</button>
+						</div>
+					</li>
+					<li>
+						<a href=""><span class="glyphicon glyphicon-save"></span></a>
+						<div class="toolbar form">
+							<form action="">
+								<h3>please input your information!</h3>
+								<ul>
+									<li><label>name:</label><span><input type="text"></span></li>
+									<li><label>phone:</label><span><input type="text"></span></li>
+									<li><label>email:</label><span><input type="text"></span></li>
+									<li><label></label><span><button type="submit">submit</button></span></li>
+								</ul>
+							</form>
+						</div>
+					</li>
+					<li>
+						<a href=""><span class="glyphicon glyphicon-trash"></span></a>
+						<div class="toolbar confirm">
+							<button>confirm</button> <button>cancel</button>
+						</div>
+					</li>
+				</ul>				
+			</div>
+			<div class="demo-box-content">
+				<h5>vertical align right for click</h5>
+				<ul class="toolbar-demo glyph-wrap demo-glyph-vertical vertical">
+					<li>
+						<a href="javascript:;"><span class="glyphicon glyphicon-user"></span></a>
+						<div class="toolbar profile">
+							<input type="text" placeholder='your name?'>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;"><span class="glyphicon glyphicon-list-alt"></span></a>
+						<div class="toolbar list">
+							<a href="javascript:;"><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href="javascript:;"><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href="javascript:;"><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href="javascript:;"><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href="javascript:;"><span class="glyphicon glyphicon-link"></span> some link</a>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;"><span class="glyphicon glyphicon-print"></span></a>
+						<div class="toolbar print">
+							<input type="checkbox"> confirm? <button type="button">print</button>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;"><span class="glyphicon glyphicon-save"></span></a>
+						<div class="toolbar form">
+							<form action="">
+								<h3>please input your information!</h3>
+								<ul>
+									<li><label>name:</label><span><input type="text"></span></li>
+									<li><label>phone:</label><span><input type="text"></span></li>
+									<li><label>email:</label><span><input type="text"></span></li>
+									<li><label></label><span><button type="submit">submit</button></span></li>
+								</ul>
+							</form>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;"><span class="glyphicon glyphicon-trash"></span></a>
+						<div class="toolbar confirm">
+							<button>confirm</button> <button>cancel</button>
+						</div>
+					</li>
+				</ul>				
+			</div>
+
+			<div class="demo-box-content">
+				<h5>vertical align left for hover</h5>
+				<ul class="toolbar-demo glyph-wrap demo-glyph-vertical-left vertical pull-right">
+					<li>
+						<a href=""><span class="glyphicon glyphicon-user"></span></a>
+						<div class="toolbar profile">
+							<input type="text" placeholder='your name?'>
+						</div>
+					</li>
+					<li>
+						<a href=""><span class="glyphicon glyphicon-list-alt"></span></a>
+						<div class="toolbar list">
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+							<a href=""><span class="glyphicon glyphicon-link"></span> some link</a>
+						</div>
+					</li>
+					<li>
+						<a href=""><span class="glyphicon glyphicon-print"></span></a>
+						<div class="toolbar print">
+							<input type="checkbox"> confirm? <button type="button">print</button>
+						</div>
+					</li>
+					<li>
+						<a href=""><span class="glyphicon glyphicon-save"></span></a>
+						<div class="toolbar form">
+							<form action="">
+								<h3>please input your information!</h3>
+								<ul>
+									<li><label>name:</label><span><input type="text"></span></li>
+									<li><label>phone:</label><span><input type="text"></span></li>
+									<li><label>email:</label><span><input type="text"></span></li>
+									<li><label></label><span><button type="submit">submit</button></span></li>
+								</ul>
+							</form>
+						</div>
+					</li>
+					<li>
+						<a href=""><span class="glyphicon glyphicon-trash"></span></a>
+						<div class="toolbar confirm">
+							<button>confirm</button> <button>cancel</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="demo-box-content">
+				<div class="demo-code">
+<pre>
+example : 
+
+$(".demo-glyph-vertical-left").children('li').toolbar({
+	trigger : 'hover',
+	align : 'left',
+	group : $(".demo-glyph-vertical-left").children('li')
+});
+</pre>					
+				</div>
+			</div>
+		</div>
+
+		<div class="demo-box">
+			<div class="demo-box-title">ie6,ie7 support.</div>
+			<div class="demo-box-content">
+				<h5>horizontal align top</h5>
+				<button class='act-clicktotop-ie67'>click to top</button>
+				<ul class="toolbar-demo demo-clicktotop-ie67">
+					<li><a href=""><i class="icon icon-user"></i></a></li>
+					<li><a href=""><i class="icon icon-list-alt"></i></a></li>
+					<li><a href=""><i class="icon icon-print"></i></a></li>
+					<li><a href=""><i class="icon icon-save"></i></a></li>
+					<li><a href=""><i class="icon icon-trash"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="jquery.js"></script>
+	<script src="jqueryui.js"></script>
+	<script src="../jquery.toolbar.js"></script>
+	<script>
+		(function(){
+			$(".act-clicktotop").toolbar({
+				content : '.demo-clicktotop'
+			});
+			$(".test").click(function(){
+				$(".act-clicktotop").toolbar('toggle');
+				return false;
+			})
+			$(".act-clicktobottom").toolbar({
+				align : 'bottom',
+				content : '.demo-clicktobottom'
+			});
+			$(".act-clicktoleft").toolbar({
+				align : 'left',
+				content : '.demo-clicktoleft'
+			});
+			$(".act-clicktoright").toolbar({
+				align : 'right',
+				content : '.demo-clicktoright'
+			});
+			$(".act-hovertotop").toolbar({
+				trigger : 'hover',
+				content : '.demo-hovertotop'
+			});
+
+			//glyph
+			$(".demo-glyph-horizontal").children('li').toolbar({
+				trigger : 'hover',
+				group : $(".demo-glyph-horizontal").children('li')
+			});
+			$(".demo-glyph-horizontal-bottom").children('li').toolbar({
+				trigger : 'hover',
+				align : 'bottom',
+				group : $(".demo-glyph-horizontal-bottom").children('li')
+			});
+			$(".demo-glyph-vertical").children('li').toolbar({
+				align : 'right',
+				group : $(".demo-glyph-vertical").children('li')
+			});
+			$(".demo-glyph-vertical-left").children('li').toolbar({
+				trigger : 'hover',
+				align : 'left',
+				group : $(".demo-glyph-vertical-left").children('li')
+			});
+
+			$(".act-clicktotop-ie67").toolbar({
+				content : '.demo-clicktotop-ie67'
+			});
+		})()
+	</script>
+</body>
+</html>
